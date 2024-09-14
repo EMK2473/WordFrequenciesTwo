@@ -14,11 +14,17 @@ public class WordFrequenciesTwo {
 
       for(int i = 1; i < stringArray.length; ++i) {
         System.out.println(stringArray[i]);
+        String searchWord = stringArray[i];
+
+        int frequency = 0;
+
+        for(int j = 0; j < stringArray.length; ++j){
+            if(stringArray[j].equals(searchWord)) {
+                frequency++;
+            }
+        }
+        System.out.println(searchWord + ": " + frequency);
       }
-
-
-
-
       scnr.close();
    }
 }
