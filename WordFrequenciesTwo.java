@@ -8,12 +8,8 @@ public class WordFrequenciesTwo {
       
       String input = scnr.nextLine();
       String[] stringArray = input.split(" ");
-      int NUM_ELEMENTS = Integer.parseInt(stringArray[0]);
-
-      System.out.println(NUM_ELEMENTS);
 
       for(int i = 1; i < stringArray.length; ++i) {
-        System.out.println(stringArray[i]);
         String searchWord = stringArray[i];
 
         int frequency = 0;
@@ -23,7 +19,7 @@ public class WordFrequenciesTwo {
                 frequency++;
             }
         }
-        System.out.println(searchWord + ": " + frequency);
+        System.out.println(searchWord + " - " + frequency);
       }
       scnr.close();
    }
